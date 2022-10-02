@@ -3,8 +3,10 @@ body {
   margin: 0;
   padding: 0;
   max-width: 100%;
-    overflow-x: hidden;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
 }
+
 .font-logo{
   font-family: 'Lato', sans-serif;
 }

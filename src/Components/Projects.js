@@ -1,10 +1,10 @@
 import React from "react";
 import jokescenter from "../image/jokescenter_project.png";
 import button from "../image/button_project.png";
-import todolist from "../image/todo_project.png"
-import teslacopy from "../image/tesla_project.png"
-import juice from "../image/juice_project.png"
-import spotify from "../image/spotify_project.png"
+import todolist from "../image/todo_project.png";
+import teslacopy from "../image/tesla_project.png";
+import juice from "../image/juice_project.png";
+import spotify from "../image/spotify_project.png";
 
 const Projects = () => {
   return (
@@ -17,49 +17,162 @@ const Projects = () => {
           Projects
         </h1>
       </div>
-      <div className="md:h-[50rem] h-[30rem] rotate-[357deg] mx-[-30px] md:mt-[-7rem] mt-[-5rem] bg-gradient-to-r from-[#ff7e5f]  to-[#feb47b] z-10 "></div>
-      <div className="h-[34rem] relative flex justify-around mt-[-42rem] mx-10 sm:space-x-5">
-        <div className="text-black bg-white w-[17rem] rounded-xl overflow-hidden">
+      <div className="md:h-[50rem] h-[160rem] rotate-[357deg] md:mx-[-30px] mx-[-30rem] md:mt-[-7rem] mt-[-5rem] bg-gradient-to-r from-[#ff7e5f]  to-[#feb47b] z-10 "></div>
+      <div className="h-[34rem] relative md:flex md:justify-around md:mt-[-42rem] mt-[-160rem] mx-24 space-y-10 md:space-y-0 md:space-x-4">
+        <div className="text-black bg-white md:w-[17rem] w-[18rem] rounded-xl overflow-hidden ">
           <img alt="imagea" className="h-[11rem]" src={teslacopy} />
-          <h1 className="font-logo text-[1.5rem] mx-4 my-[1rem]">Tesla Clone</h1>
-          <p className=" mx-4">
-            Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry. Lorem Ipsum has been the industry's standard dummy text
-            ever since the 1500s, when an unknown printer 
+          <h1 className="font-logo md:text-[1.5rem] text-[1.2rem] mx-4  my-[1rem]">
+            Tesla Clone
+          </h1>
+          <p className=" mx-4 mb-[3rem] text-[0.83rem] md:text-[1rem]">
+            This project is a copy of the first page on the tesla website in the
+            US. I used{" "}
+            <u>
+              <b>React</b>
+            </u>{" "}
+            and{" "}
+            <u>
+              <b>TailwindCss</b>
+            </u>{" "}
+            for the design. I created this project because I thought it was
+            interesting to be able to copy such a well-known website with a
+            unique design.
           </p>
+          <div className="flex justify-center mx-4">
+            <button className="mr-3 font-logo text-white bg-slate-900 rounded p-2 px-4 rounded-3xl md:text-[17px] text-[15px] ">
+              Live Demo {">"}
+            </button>
+            <button className=" font-logo text-white  bg-slate-900 rounded p-2 rounded-3xl md:text-[17px] text-[15px] px-4 md:px-2">
+              GitHub {">"}
+            </button>
+          </div>
         </div>
         {/* Tesla */}
-        <div className="text-black bg-white md:w-[17rem] rounded-xl overflow-hidden">
+        <div className="text-black bg-white md:w-[17rem] w-[18rem] rounded-xl overflow-hidden ">
           <img alt="imagea" className="h-[11rem]" src={todolist} />
-          <h1>Da si asta e bin</h1>
+          <h1 className="font-logo md:text-[1.5rem] text-[1.2rem] mx-4  my-[1rem]">
+            Todo App
+          </h1>
+          <p className=" mx-4 mb-[6rem] text-[0.83rem] md:text-[1rem]">
+            In this project, I built a Todo List. I wanted to recap{" "}
+            <u>
+              <b>CRUD principles</b>
+            </u>{" "}
+            and found the perfect project. Elements can be added and deleted in
+            it.The design was made with TailwindCss.
+          </p>
+          <div className="flex justify-center mx-4">
+            <button className="mr-3 font-logo text-white bg-slate-900 rounded p-2 px-4 rounded-3xl md:text-[17px] text-[15px] ">
+              Live Demo {">"}
+            </button>
+            <button className=" font-logo text-white  bg-slate-900 rounded p-2 rounded-3xl md:text-[17px] text-[15px] px-4 md:px-2">
+              GitHub {">"}
+            </button>
+          </div>
         </div>
         {/* TodoList */}
-        <div className="text-black bg-white md:w-[17rem] rounded-xl overflow-hidden">
+        <div className="text-black bg-white md:w-[17rem] w-[18rem] rounded-xl overflow-hidden ">
           <img alt="imagea" className="h-[11rem]" src={juice} />
-          <h1>Da si asta e bin</h1>
+          <h1 className="font-logo text-[1.5rem] mx-4 my-[1rem]">
+            Juice Factory
+          </h1>
+          <p className="mx-4 mb-[6rem] text-[0.83rem] md:text-[1rem]">
+            I built this project to show some of my design skills. The website
+            tells the story of a family that opened a chain of restaurants. The
+            project was made while I was still learning{" "}
+            <u>
+              <b>CSS principles</b>
+            </u>{" "}
+            .
+          </p>
+          <div className="flex justify-center mx-4">
+            <button className="mr-3 font-logo text-white bg-slate-900 rounded p-2 px-4 rounded-3xl md:text-[17px] text-[15px] ">
+              Live Demo {">"}
+            </button>
+            <button className=" font-logo text-white  bg-slate-900 rounded p-2 rounded-3xl md:text-[17px] text-[15px] px-4 md:px-2">
+              GitHub {">"}
+            </button>
+          </div>
         </div>
         {/* Juice */}
-        <div className="text-black bg-white md:w-[17rem] rounded-xl overflow-hidden">
+        <div className="text-black bg-white md:w-[17rem] w-[18rem] rounded-xl overflow-hidden ">
           <img alt="imagea" src={jokescenter} className="h-[11rem]" />
-          <h1>Da si asta e bin</h1>
-        </div>{" "}
-        {/* jokes*/}
-        <div className="text-black bg-white md:w-[17rem] rounded-xl overflow-hidden">
-          <img alt="imagea" src={button} className="h-[11rem] " />
-          <h1>Da si asta e bin</h1>
-        </div>{" "}
-        {/* Button */}
-        <div className="text-black bg-white md:w-[17rem] rounded-xl overflow-hidden ">
-          <img alt="imagea" className="h-[11rem] blur" src={spotify} />
-          <h1>Spotify Clone</h1>
-          <p>
-            Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry. Lorem Ipsum has been the industry's standard dummy text
-            ever since the 1500s, when an unknown printer took a galley of type
-            and scrambled it to make a type specimen book. It has survived not
-            only five centuries, but also the leap into electronic typesetting,
-            remaining essentially unchanged.{" "}
+          <h1 className="font-logo md:text-[1.5rem] text-[1.2rem] mx-4  my-[1rem]">
+            Jokes Center
+          </h1>
+          <p className=" mx-4 mb-[6rem] text-[0.83rem] md:text-[1rem]">
+            In this project, I used a REST API ({" "}
+            <u>
+              <b>Jokes API</b>
+            </u>{" "}
+            ) that generates an infinity of jokes (not that funny) and displays
+            them on the website. I used{" "}
+            <u>
+              <b>React Hooks</b>
+            </u>{" "}
+            and
+            <u>
+              {" "}
+              <b>TailwindCss</b>
+            </u>{" "}
+            for the design.
           </p>
+          <div className="flex justify-center mx-4">
+            <button className="mr-3 font-logo text-white bg-slate-900 rounded p-2 px-4 rounded-3xl md:text-[17px] text-[15px]">
+              Live Demo {">"}
+            </button>
+            <button className=" font-logo text-white  bg-slate-900 rounded p-2 rounded-3xl md:text-[17px] text-[15px] px-4 md:px-2">
+              GitHub {">"}
+            </button>
+          </div>
+        </div>
+        {/* jokes*/}
+        <div className="text-black bg-white md:w-[17rem] w-[18rem] rounded-xl overflow-hidden ">
+          <img alt="imagea" src={button} className="h-[11rem] " />
+          <h1 className="font-logo md:text-[1.5rem] text-[1.2rem] mx-4  my-[1rem]">
+            Hack 2003
+          </h1>
+          <p className=" mx-4 mb-[1.5rem] text-[0.83rem] md:text-[1rem]">
+            This project wants to bring a hack from 2003, which caused a lot of
+            errors and controversies. Because once it was called, it deleted
+            everything from the computer it was on. This was a .exe file, but I
+            managed to bring it back in web format. I wanted to test my
+            knowledge of animations.
+          </p>
+          <div className="flex justify-center mx-4">
+            <button className="mr-3 font-logo text-white bg-slate-900 rounded p-2 px-4 rounded-3xl md:text-[17px] text-[15px]">
+              Live Demo {">"}
+            </button>
+            <button className="  font-logo text-white  bg-slate-900 rounded p-2 rounded-3xl md:text-[17px] text-[15px] px-4 md:px-2">
+              GitHub {">"}
+            </button>
+          </div>
+        </div>
+        {/* Button */}
+        <div className="text-black bg-white md:w-[17rem] rounded-xl overflow-hidden invisible md:visible ">
+          <img alt="imagea" className="h-[11rem] blur" src={spotify} />
+          <h1 className="font-logo text-[1.5rem] mx-4 mt-[1rem]">
+            Spotify Clone
+          </h1>
+          <h1 className="mb-[1rem]  mx-4 text-red-700 font-bold">
+            Coming Soon...
+          </h1>
+          <div className="blur-sm">
+            <p className=" mx-4 mb-[1.5rem] text-[0.83rem] md:text-[1rem] ">
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry. Lorem Ipsum has been the industry's standard dummy text
+              ever since the 1500s, when an unknown printer took a galley of
+              type and asdas asfg asgfa asga asdfga.
+            </p>
+          </div>
+          <div className="flex justify-center mx-4 blur">
+            <button className="mr-3 font-logo text-white bg-slate-900 rounded p-2 rounded-3xl text-[17px] ">
+              Live Demo {">"}
+            </button>
+            <button className=" font-logo text-white  bg-slate-900 rounded p-2 rounded-3xl text-[17px]">
+              GitHub {">"}
+            </button>
+          </div>
         </div>
       </div>
     </>
