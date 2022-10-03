@@ -49,6 +49,8 @@ const Projects = () => {
             <a
               className=" font-logo text-white  bg-slate-900 p-2 rounded-3xl md:text-[17px] text-[15px] px-4 md:px-2 hover:bg-slate-700"
               href="https://github.com/EnacheAdrian12/TeslaCopy"
+              target="_blank"
+              rel="noreferrer"
             >
               GitHub {">"}
             </a>
@@ -87,6 +89,8 @@ const Projects = () => {
             <a
               className=" font-logo text-white  bg-slate-900 p-2 rounded-3xl md:text-[17px] text-[15px] px-4 md:px-2 hover:bg-slate-700"
               href="https://github.com/EnacheAdrian12/ToDoList"
+              target="_blank"
+              rel="noreferrer"
             >
               GitHub {">"}
             </a>
@@ -117,6 +121,8 @@ const Projects = () => {
             <a
               className=" font-logo text-white  bg-slate-900  p-2 rounded-3xl md:text-[17px] text-[15px] px-4 md:px-2 hover:bg-slate-700"
               href="https://github.com/EnacheAdrian12/juicewebsite"
+              target="_blank"
+              rel="noreferrer"
             >
               GitHub {">"}
             </a>
@@ -155,6 +161,8 @@ const Projects = () => {
             <a
               className=" font-logo text-white  bg-slate-900  p-2 rounded-3xl md:text-[17px] text-[15px] px-4 md:px-2 hover:bg-slate-700"
               href="https://github.com/EnacheAdrian12/JokesCenter"
+              target="_blank"
+              rel="noreferrer"
             >
               GitHub {">"}
             </a>
@@ -183,6 +191,8 @@ const Projects = () => {
             <a
               className="  font-logo text-white  bg-slate-900  p-2 rounded-3xl md:text-[17px] text-[15px] px-4 md:px-2 hover:bg-slate-700"
               href="https://github.com/EnacheAdrian12/ExHack"
+              target="_blank"
+              rel="noreferrer"
             >
               GitHub {">"}
             </a>
