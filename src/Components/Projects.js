@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import jokescenter from "../image/jokescenter_project.png";
 import button from "../image/button_project.png";
 import todolist from "../image/todo_project.png";
@@ -19,7 +20,7 @@ const Projects = () => {
       </div>
       <div className="md:h-[50rem] h-[160rem] rotate-[357deg] md:mx-[-30px] mx-[-30rem] md:mt-[-7rem] mt-[-5rem] bg-gradient-to-r from-[#ff7e5f]  to-[#feb47b] z-10 "></div>
       <div className="h-[34rem] relative md:flex md:justify-around md:mt-[-42rem] mt-[-160rem] mx-24 space-y-10 md:space-y-0 md:space-x-4">
-        <div className="text-black bg-white md:w-[17rem] w-[18rem] rounded-xl overflow-hidden ">
+        <div className="text-black bg-white md:w-[17rem] w-[18rem] rounded-xl overflow-hidden hover:scale-105 transition-transform duration-200 ease-in-out">
           <img alt="imagea" className="h-[11rem]" src={teslacopy} />
           <h1 className="font-logo md:text-[1.5rem] text-[1.2rem] mx-4  my-[1rem]">
             Tesla Clone
@@ -39,39 +40,59 @@ const Projects = () => {
             unique design.
           </p>
           <div className="flex justify-center mx-4">
-            <button className="mr-3 font-logo text-white bg-slate-900 rounded p-2 px-4 rounded-3xl md:text-[17px] text-[15px] ">
+            <Link
+              className="mr-3 font-logo text-white bg-slate-900 hover:bg-slate-700 p-2 px-4 rounded-3xl md:text-[17px] text-[15px] "
+              to="/copytesla"
+            >
               Live Demo {">"}
-            </button>
-            <button className=" font-logo text-white  bg-slate-900 rounded p-2 rounded-3xl md:text-[17px] text-[15px] px-4 md:px-2">
+            </Link>
+            <a
+              className=" font-logo text-white  bg-slate-900 p-2 rounded-3xl md:text-[17px] text-[15px] px-4 md:px-2 hover:bg-slate-700"
+              href="https://github.com/EnacheAdrian12/TeslaCopy"
+            >
               GitHub {">"}
-            </button>
+            </a>
           </div>
         </div>
         {/* Tesla */}
-        <div className="text-black bg-white md:w-[17rem] w-[18rem] rounded-xl overflow-hidden ">
+        <div className="text-black bg-white md:w-[17rem] w-[18rem] rounded-xl overflow-hidden hover:scale-105 transition-transform duration-200 ease-in-out">
           <img alt="imagea" className="h-[11rem]" src={todolist} />
           <h1 className="font-logo md:text-[1.5rem] text-[1.2rem] mx-4  my-[1rem]">
             Todo App
           </h1>
-          <p className=" mx-4 mb-[6rem] text-[0.83rem] md:text-[1rem]">
+          <p className=" mx-4 mb-[4.5rem] text-[0.83rem] md:text-[1rem]">
             In this project, I built a Todo List. I wanted to recap{" "}
             <u>
               <b>CRUD principles</b>
             </u>{" "}
+            ,
+            <u>
+              <b>Redux</b>
+            </u>{" "}
             and found the perfect project. Elements can be added and deleted in
-            it.The design was made with TailwindCss.
+            it.The design was made with{" "}
+            <u>
+              {" "}
+              <b>TailwindCss</b>
+            </u>.
           </p>
           <div className="flex justify-center mx-4">
-            <button className="mr-3 font-logo text-white bg-slate-900 rounded p-2 px-4 rounded-3xl md:text-[17px] text-[15px] ">
+            <Link
+              className="mr-3 font-logo text-white bg-slate-900  p-2 px-4 rounded-3xl md:text-[17px] text-[15px] hover:bg-slate-700"
+              to="/todolist"
+            >
               Live Demo {">"}
-            </button>
-            <button className=" font-logo text-white  bg-slate-900 rounded p-2 rounded-3xl md:text-[17px] text-[15px] px-4 md:px-2">
+            </Link>
+            <a
+              className=" font-logo text-white  bg-slate-900 p-2 rounded-3xl md:text-[17px] text-[15px] px-4 md:px-2 hover:bg-slate-700"
+              href="https://github.com/EnacheAdrian12/ToDoList"
+            >
               GitHub {">"}
-            </button>
+            </a>
           </div>
         </div>
         {/* TodoList */}
-        <div className="text-black bg-white md:w-[17rem] w-[18rem] rounded-xl overflow-hidden ">
+        <div className="text-black bg-white md:w-[17rem] w-[18rem] rounded-xl overflow-hidden hover:scale-105 transition-transform duration-200 ease-in-out ">
           <img alt="imagea" className="h-[11rem]" src={juice} />
           <h1 className="font-logo text-[1.5rem] mx-4 my-[1rem]">
             Juice Factory
@@ -86,16 +107,19 @@ const Projects = () => {
             .
           </p>
           <div className="flex justify-center mx-4">
-            <button className="mr-3 font-logo text-white bg-slate-900 rounded p-2 px-4 rounded-3xl md:text-[17px] text-[15px] ">
+            <Link
+              className="mr-3 font-logo text-white bg-slate-900 p-2 px-4 rounded-3xl md:text-[17px] text-[15px] hover:bg-slate-700"
+              to="/fruitfactory"
+            >
               Live Demo {">"}
-            </button>
-            <button className=" font-logo text-white  bg-slate-900 rounded p-2 rounded-3xl md:text-[17px] text-[15px] px-4 md:px-2">
+            </Link>
+            <button className=" font-logo text-white  bg-slate-900  p-2 rounded-3xl md:text-[17px] text-[15px] px-4 md:px-2 hover:bg-slate-700">
               GitHub {">"}
             </button>
           </div>
         </div>
         {/* Juice */}
-        <div className="text-black bg-white md:w-[17rem] w-[18rem] rounded-xl overflow-hidden ">
+        <div className="text-black bg-white md:w-[17rem] w-[18rem] rounded-xl overflow-hidden hover:scale-105 transition-transform duration-200 ease-in-out">
           <img alt="imagea" src={jokescenter} className="h-[11rem]" />
           <h1 className="font-logo md:text-[1.5rem] text-[1.2rem] mx-4  my-[1rem]">
             Jokes Center
@@ -118,16 +142,22 @@ const Projects = () => {
             for the design.
           </p>
           <div className="flex justify-center mx-4">
-            <button className="mr-3 font-logo text-white bg-slate-900 rounded p-2 px-4 rounded-3xl md:text-[17px] text-[15px]">
+            <Link
+              className="mr-3 font-logo text-white bg-slate-900  p-2 px-4 rounded-3xl md:text-[17px] text-[15px] hover:bg-slate-700"
+              to="/jokescenter"
+            >
               Live Demo {">"}
-            </button>
-            <button className=" font-logo text-white  bg-slate-900 rounded p-2 rounded-3xl md:text-[17px] text-[15px] px-4 md:px-2">
+            </Link>
+            <a
+              className=" font-logo text-white  bg-slate-900  p-2 rounded-3xl md:text-[17px] text-[15px] px-4 md:px-2 hover:bg-slate-700"
+              href="https://github.com/EnacheAdrian12/JokesCenter"
+            >
               GitHub {">"}
-            </button>
+            </a>
           </div>
         </div>
         {/* jokes*/}
-        <div className="text-black bg-white md:w-[17rem] w-[18rem] rounded-xl overflow-hidden ">
+        <div className="text-black bg-white md:w-[17rem] w-[18rem] rounded-xl overflow-hidden hover:scale-105 transition-transform duration-200 ease-in-out">
           <img alt="imagea" src={button} className="h-[11rem] " />
           <h1 className="font-logo md:text-[1.5rem] text-[1.2rem] mx-4  my-[1rem]">
             Hack 2003
@@ -140,12 +170,18 @@ const Projects = () => {
             knowledge of animations.
           </p>
           <div className="flex justify-center mx-4">
-            <button className="mr-3 font-logo text-white bg-slate-900 rounded p-2 px-4 rounded-3xl md:text-[17px] text-[15px]">
+            <Link
+              className="mr-3 font-logo text-white bg-slate-900 p-2 px-4 rounded-3xl md:text-[17px] text-[15px] hover:bg-slate-700"
+              to="/hack"
+            >
               Live Demo {">"}
-            </button>
-            <button className="  font-logo text-white  bg-slate-900 rounded p-2 rounded-3xl md:text-[17px] text-[15px] px-4 md:px-2">
+            </Link>
+            <a
+              className="  font-logo text-white  bg-slate-900  p-2 rounded-3xl md:text-[17px] text-[15px] px-4 md:px-2 hover:bg-slate-700"
+              href="https://github.com/EnacheAdrian12/ExHack"
+            >
               GitHub {">"}
-            </button>
+            </a>
           </div>
         </div>
         {/* Button */}
@@ -166,10 +202,10 @@ const Projects = () => {
             </p>
           </div>
           <div className="flex justify-center mx-4 blur">
-            <button className="mr-3 font-logo text-white bg-slate-900 rounded p-2 rounded-3xl text-[17px] ">
+            <button className="mr-3 font-logo text-white bg-slate-900  p-2 rounded-3xl text-[17px] ">
               Live Demo {">"}
             </button>
-            <button className=" font-logo text-white  bg-slate-900 rounded p-2 rounded-3xl text-[17px]">
+            <button className=" font-logo text-white  bg-slate-900 p-2 rounded-3xl text-[17px]">
               GitHub {">"}
             </button>
           </div>

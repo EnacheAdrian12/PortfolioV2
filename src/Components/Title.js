@@ -3,6 +3,8 @@ import logo_title from '../image/title_logo2.png'
 import { TypeAnimation } from "react-type-animation";
 
 const Title = () => {
+
+
   return (
     <>
       <div className="md:h-[35rem] h-[12rem]  origin-top-left rotate-[357deg] bg-gradient-to-r from-[#FFA17F]  to-[#00223E] ml-[-50px]"></div>

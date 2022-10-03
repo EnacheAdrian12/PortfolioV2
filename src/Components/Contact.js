@@ -7,6 +7,7 @@ const Contact = () => {
   const [Message, setMessage] = useState("");
   const [DinamicString, setDinamicString] = useState("");
   const [ClickValidation, setClickValidation] = useState("true");
+  const [ErrorMessage, setErrorMessage] = useState("true")
 
   const ContactClicked = () => {
     if (
@@ -31,6 +32,7 @@ const Contact = () => {
       setEmail("");
       setMessage("");
       setClickValidation(false);
+      setErrorMessage(false);
       setDinamicString(
         <div role="status">
           <svg
@@ -56,6 +58,11 @@ const Contact = () => {
       setTimeout(function () {
         setClickValidation(true);
       }, 8000);
+    }else{
+      setErrorMessage(false);
+      setTimeout(function(){
+        setErrorMessage(true);
+      },10000)
     }
   };
   return (
@@ -66,17 +73,17 @@ const Contact = () => {
         </h1>
       </div>
       <div className=" flex justify-center bg-gradient-to-r from-[#FFA17F]  to-[#00223E] mt-[2rem]  ">
-        <form class="w-full max-w-lg mt-[3rem] mb-[3rem]">
-          <div class="flex flex-wrap -mx-3 mb-6">
-            <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">
+        <form className="md:w-full max-w-lg mt-[3rem] mb-[3rem] mx-[3rem] md:mx-0">
+          <div className="flex flex-wrap -mx-3 mb-6">
+            <div className="w-full md:w-1/2 px-3 mb-6 md:mb-0">
               <label
-                class="block uppercase tracking-wider text-white md:text-[1rem] text-[0.8rem] font-logo  mb-2"
+                className="block uppercase tracking-wider text-white md:text-[1rem] text-[0.8rem] font-logo  mb-2"
                 for="grid-first-name"
               >
                 First Name
               </label>
               <input
-                class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+                className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
                 id="grid-first-name"
                 type="text"
                 value={FirstName}
@@ -85,15 +92,15 @@ const Contact = () => {
                 }}
               />
             </div>
-            <div class="w-full md:w-1/2 px-3">
+            <div className="w-full md:w-1/2 px-3">
               <label
-                class="block uppercase tracking-wider text-white  md:text-[1rem] text-[0.8rem] font-bold mb-2"
+                className="block uppercase tracking-wider text-white  md:text-[1rem] text-[0.8rem] font-bold mb-2"
                 for="grid-last-name"
               >
                 Last Name
               </label>
               <input
-                class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+                className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
                 id="grid-last-name"
                 type="text"
                 value={LastName}
@@ -103,16 +110,16 @@ const Contact = () => {
               />
             </div>
           </div>
-          <div class="flex flex-wrap -mx-3 mb-6">
-            <div class="w-full px-3">
+          <div className="flex flex-wrap -mx-3 mb-6">
+            <div className="w-full px-3">
               <label
-                class="block uppercase tracking-wider text-white  md:text-[1rem] text-[0.8rem] font-bold mb-2"
+                className="block uppercase tracking-wider text-white  md:text-[1rem] text-[0.8rem] font-bold mb-2"
                 for="grid-password"
               >
                 E-mail
               </label>
               <input
-                class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+                className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
                 id="email"
                 type="email"
                 value={Email}
@@ -122,16 +129,16 @@ const Contact = () => {
               />
             </div>
           </div>
-          <div class="flex flex-wrap -mx-3 mb-6">
-            <div class="w-full px-3">
+          <div className="flex flex-wrap -mx-3 mb-6">
+            <div className="w-full px-3">
               <label
-                class="block uppercase tracking-wider text-white  md:text-[1rem] text-[0.8rem] font-bold mb-2"
+                className="block uppercase tracking-wider text-white  md:text-[1rem] text-[0.8rem] font-bold mb-2"
                 for="grid-password"
               >
                 Message
               </label>
               <textarea
-                class=" no-resize appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500 h-48 resize-none"
+                className=" no-resize appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500 h-48 resize-none"
                 id="message"
                 value={Message}
                 onChange={(e) => {
@@ -140,11 +147,12 @@ const Contact = () => {
               ></textarea>
             </div>
           </div>
-          <div class="md:flex md:items-center">
-            <div class="md:w-1/3">
+          <div className="md:flex md:items-center">
+            <div className="md:w-1/3">
+              {ErrorMessage ? '': <p className=" md:w-[30rem] font-logo md:text-[15px] w-[22rem] text-[13px]">Something went wrong...Please try to put something valid</p>}
               {ClickValidation ? (
                 <button
-                  class="shadow bg-black hover:bg-gray-800 focus:shadow-outline focus:outline-none text-white font-bold py-2 px-4 rounded"
+                  className="shadow bg-black hover:bg-gray-800 focus:shadow-outline focus:outline-none text-white font-bold py-2 px-4 rounded"
                   type="button"
                   onClick={() => {
                     ContactClicked();
@@ -156,7 +164,7 @@ const Contact = () => {
                 <h1 className="md:w-[35rem] font-logo">{DinamicString}</h1>
               )}
             </div>
-            <div class="md:w-2/3"></div>
+            <div className="md:w-2/3"></div>
           </div>
         </form>
       </div>
