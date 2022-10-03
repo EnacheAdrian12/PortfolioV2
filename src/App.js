@@ -8,6 +8,7 @@ import ToDoList from "./Projects/TodoList";
 import FruitJuice from "./Projects/FruitJuice";
 import JokesCenter from "./Projects/JokesCenter";
 import Hack from "./Projects/Hack";
+import NotFoundPage from "./Components/NotFoundPage";
 
 function App() {
   return (
@@ -30,6 +31,7 @@ function App() {
         <Route path="/fruitfactory" element={<FruitJuice />} />
         <Route path="/jokescenter" element={<JokesCenter />} />
         <Route path="/hack" element={<Hack />} />
+        <Route path="*" element={<NotFoundPage />} />
       </Routes>
     </>
   );

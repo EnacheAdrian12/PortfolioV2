@@ -74,7 +74,8 @@ const Projects = () => {
             <u>
               {" "}
               <b>TailwindCss</b>
-            </u>.
+            </u>
+            .
           </p>
           <div className="flex justify-center mx-4">
             <Link
@@ -113,9 +114,12 @@ const Projects = () => {
             >
               Live Demo {">"}
             </Link>
-            <button className=" font-logo text-white  bg-slate-900  p-2 rounded-3xl md:text-[17px] text-[15px] px-4 md:px-2 hover:bg-slate-700">
+            <a
+              className=" font-logo text-white  bg-slate-900  p-2 rounded-3xl md:text-[17px] text-[15px] px-4 md:px-2 hover:bg-slate-700"
+              href="https://github.com/EnacheAdrian12/juicewebsite"
+            >
               GitHub {">"}
-            </button>
+            </a>
           </div>
         </div>
         {/* Juice */}
