@@ -7,7 +7,7 @@ import { BsGithub } from "react-icons/bs";
 const Title = () => {
   return (
     <>
-      <div className="md:h-[35rem] h-[12rem]  origin-top-left rotate-[357deg] bg-gradient-to-r from-[#FFA17F]  to-[#00223E] ml-[-50px]"></div>
+      <div className="md:h-[35rem] h-[12rem]  origin-top-left md:rotate-[357deg] bg-gradient-to-r from-[#FFA17F]  to-[#00223E] ml-[-50px]"></div>
       <div className="absolute md:top-5 md:left-5 md:visible top-0">
         <div className="space-y-5 flex flex-col ">
           <a

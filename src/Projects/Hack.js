@@ -68,12 +68,10 @@ const Hack = () => {
     setTimeout(function () {
       setLastMessage("Finished");
     }, 23000);
-    setTimeout(function () {
-      setLastMessage("Bye");
-    }, 25000);
+   
     setTimeout(function () {
       setPage4(true);
-    }, 27000);
+    }, 25000);
   };
 
   return (
@@ -107,7 +105,7 @@ const Hack = () => {
             <img
               src={mario2}
               alt="da"
-              className="absolute h-12 left-[20%] bottom-56 md:h-60 h-36"
+              className="absolute left-[20%] bottom-56 md:h-60 h-36"
             />
             <img
               src={coin}

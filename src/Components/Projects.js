@@ -18,9 +18,9 @@ const Projects = () => {
           Projects
         </h1>
       </div>
-      <div className="md:h-[50rem] h-[160rem] rotate-[357deg] md:mx-[-30px] mx-[-30rem] md:mt-[-7rem] mt-[-5rem] bg-gradient-to-r from-[#ff7e5f]  to-[#feb47b] z-10 "></div>
-      <div className="h-[34rem] relative md:flex md:justify-around md:mt-[-42rem] mt-[-160rem] mx-24 space-y-10 md:space-y-0 md:space-x-4">
-        <div className="text-black bg-white md:w-[17rem] w-[18rem] rounded-xl overflow-hidden hover:scale-105 transition-transform duration-200 ease-in-out">
+      <div className="md:h-[50rem] h-[160rem] md:rotate-[357deg] md:mx-[-30px]  md:mt-[-7rem]  bg-gradient-to-r from-[#ff7e5f]  to-[#feb47b] z-10 "></div>
+      <div className="h-[185rem] relative md:flex md:justify-around md:flex-row md:mt-[-42rem] mt-[-160rem] flex flex-col  space-y-10 md:space-y-0 md:space-x-4 md:mx-10 items-center md:items-stretch ">
+        <div className="text-black bg-white md:w-[17rem] w-[18rem] md:h-[35rem] rounded-xl overflow-hidden hover:scale-105 transition-transform duration-200 ease-in-out">
           <img alt="imagea" className="h-[11rem]" src={teslacopy} />
           <h1 className="font-logo md:text-[1.5rem] text-[1.2rem] mx-4  my-[1rem]">
             Tesla Clone
@@ -57,12 +57,12 @@ const Projects = () => {
           </div>
         </div>
         {/* Tesla */}
-        <div className="text-black bg-white md:w-[17rem] w-[18rem] rounded-xl overflow-hidden hover:scale-105 transition-transform duration-200 ease-in-out">
+        <div className="text-black bg-white md:w-[17rem] w-[18rem] rounded-xl md:h-[35rem] overflow-hidden hover:scale-105 transition-transform duration-200 ease-in-out">
           <img alt="imagea" className="h-[11rem]" src={todolist} />
           <h1 className="font-logo md:text-[1.5rem] text-[1.2rem] mx-4  my-[1rem]">
             Todo App
           </h1>
-          <p className=" mx-4 mb-[4.5rem] text-[0.83rem] md:text-[1rem]">
+          <p className=" mx-4 mb-[6rem] text-[0.83rem] md:text-[1rem]">
             In this project, I built a Todo List. I wanted to recap{" "}
             <u>
               <b>CRUD principles</b>
@@ -97,23 +97,23 @@ const Projects = () => {
           </div>
         </div>
         {/* TodoList */}
-        <div className="text-black bg-white md:w-[17rem] w-[18rem] rounded-xl overflow-hidden hover:scale-105 transition-transform duration-200 ease-in-out ">
+        <div className="text-black bg-white md:w-[17rem] w-[18rem] rounded-xl md:h-[35rem] overflow-hidden hover:scale-105 transition-transform duration-200 ease-in-out ">
           <img alt="imagea" className="h-[11rem]" src={juice} />
           <h1 className="font-logo text-[1.5rem] mx-4 my-[1rem]">
             Juice Factory
           </h1>
-          <p className="mx-4 mb-[6rem] text-[0.83rem] md:text-[1rem]">
+          <p className="mx-4 mb-[3rem] text-[0.83rem] md:text-[1rem]">
             I built this project to show some of my design skills. The website
             tells the story of a family that opened a chain of restaurants. The
             project was made while I was still learning{" "}
             <u>
               <b>CSS principles</b>
             </u>{" "}
-            .
+            .Unfortunately, this project is not web responsive.
           </p>
           <div className="flex justify-center mx-4">
             <Link
-              className="mr-3 font-logo text-white bg-slate-900 p-2 px-4 rounded-3xl md:text-[17px] text-[15px] hover:bg-slate-700"
+              className="mr-3 font-logo text-white bg-slate-900 p-2 px-4  rounded-3xl md:text-[17px] text-[15px] hover:bg-slate-700"
               to="/fruitfactory"
             >
               Live Demo {">"}
@@ -129,7 +129,7 @@ const Projects = () => {
           </div>
         </div>
         {/* Juice */}
-        <div className="text-black bg-white md:w-[17rem] w-[18rem] rounded-xl overflow-hidden hover:scale-105 transition-transform duration-200 ease-in-out">
+        <div className="text-black bg-white md:w-[17rem] w-[18rem] rounded-xl md:h-[35rem] overflow-hidden hover:scale-105 transition-transform duration-200 ease-in-out">
           <img alt="imagea" src={jokescenter} className="h-[11rem]" />
           <h1 className="font-logo md:text-[1.5rem] text-[1.2rem] mx-4  my-[1rem]">
             Jokes Center
@@ -169,7 +169,7 @@ const Projects = () => {
           </div>
         </div>
         {/* jokes*/}
-        <div className="text-black bg-white md:w-[17rem] w-[18rem] rounded-xl overflow-hidden hover:scale-105 transition-transform duration-200 ease-in-out">
+        <div className="text-black bg-white md:w-[17rem] w-[18rem] rounded-xl md:h-[35rem] overflow-hidden hover:scale-105 transition-transform duration-200 ease-in-out">
           <img alt="imagea" src={button} className="h-[11rem] " />
           <h1 className="font-logo md:text-[1.5rem] text-[1.2rem] mx-4  my-[1rem]">
             Hack 2003
@@ -199,7 +199,7 @@ const Projects = () => {
           </div>
         </div>
         {/* Button */}
-        <div className="text-black bg-white md:w-[17rem] rounded-xl overflow-hidden invisible md:visible ">
+        <div className="text-black bg-white md:w-[17rem] rounded-xl overflow-hidden invisible md:visible md:h-[35rem] ">
           <img alt="imagea" className="h-[11rem] blur" src={spotify} />
           <h1 className="font-logo text-[1.5rem] mx-4 mt-[1rem]">
             Spotify Clone

@@ -7,13 +7,13 @@ const Contact = () => {
   const [Message, setMessage] = useState("");
   const [DinamicString, setDinamicString] = useState("");
   const [ClickValidation, setClickValidation] = useState("true");
-  const [ErrorMessage, setErrorMessage] = useState("true")
+  const [ErrorMessage, setErrorMessage] = useState("true");
 
   const ContactClicked = () => {
     if (
-      Email.includes("@") === true ||
-      FirstName.length > 0 ||
-      LastName.length > 0 ||
+      Email.includes("@") === true &&
+      FirstName.length > 0 &&
+      LastName.length > 0 &&
       Message.length > 0
     ) {
       const Options = {
@@ -32,7 +32,7 @@ const Contact = () => {
       setEmail("");
       setMessage("");
       setClickValidation(false);
-      setErrorMessage(false);
+      setErrorMessage(true);
       setDinamicString(
         <div role="status">
           <svg
@@ -58,11 +58,11 @@ const Contact = () => {
       setTimeout(function () {
         setClickValidation(true);
       }, 8000);
-    }else{
+    } else {
       setErrorMessage(false);
-      setTimeout(function(){
+      setTimeout(function () {
         setErrorMessage(true);
-      },10000)
+      }, 5000);
     }
   };
   return (
@@ -149,7 +149,13 @@ const Contact = () => {
           </div>
           <div className="md:flex md:items-center">
             <div className="md:w-1/3">
-              {ErrorMessage ? '': <p className=" md:w-[30rem] font-logo md:text-[15px] w-[22rem] text-[13px]">Something went wrong...Please try to put something valid</p>}
+              {ErrorMessage ? (
+                ""
+              ) : (
+                <p className=" md:w-[30rem] font-logo md:text-[15px] w-[22rem] text-[13px]">
+                  Something went wrong...Please try to put something valid
+                </p>
+              )}
               {ClickValidation ? (
                 <button
                   className="shadow bg-black hover:bg-gray-800 focus:shadow-outline focus:outline-none text-white font-bold py-2 px-4 rounded"

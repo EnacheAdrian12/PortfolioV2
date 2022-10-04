@@ -1,17 +1,17 @@
 import React from "react";
-import teslacopy from "../image/about_logo1.png";
+import about_logo from "../image/about_logo1.png";
 
 const About = () => {
   return (
     <>
       <div className=" flex justify-center ">
-        <h1 className="md:text-[4rem] text-[2rem] font-logo tracking-tighter mt-[134rem] md:mt-[10rem] z-30 mb-[10rem]">
+        <h1 className="md:text-[4rem] text-[2rem] font-logo tracking-tighter  mb-[15rem] md:mt-[10rem] z-30  mt-[-2rem]">
           About
         </h1>
       </div>
-      <div className="md:flex md:justify-center ">
+      <div className="md:flex md:justify-center mb-[10rem] ">
         <img
-          src={teslacopy}
+          src={about_logo}
           alt="about_logo"
           className="md:h-[30rem]  invisible md:visible md:mr-[10rem]"
         />

@@ -113,7 +113,7 @@ section {
 }
 
 .header-container {
-  width: 1600px;
+  width: 100%;
   position: absolute;
   left: 50%;
   top: 45%;
@@ -379,7 +379,7 @@ aside p {
   font-size: 20px;
   letter-spacing: 1px;
   position: absolute;
-  top: 492%;
+  top: 466%;
   left: 16.25%;
   transform: translate(-50%, -50%);
 }
