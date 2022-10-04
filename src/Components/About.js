@@ -5,7 +5,7 @@ const About = () => {
   return (
     <>
       <div className=" flex justify-center ">
-        <h1 className="md:text-[4rem] text-[2rem] font-logo tracking-tighter  mb-[15rem] md:mt-[10rem] z-30  mt-[-2rem]">
+        <h1 className="md:text-[4rem] text-[2rem] font-logo tracking-tighter  mb-[7rem] md:mt-[10rem] z-30  mt-[-9rem]">
           About
         </h1>
       </div>
