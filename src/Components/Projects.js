@@ -19,7 +19,7 @@ const Projects = () => {
         </h1>
       </div>
       <div className="md:h-[50rem] h-[160rem] md:rotate-[357deg] md:mx-[-30px]  md:mt-[-7rem]  bg-gradient-to-r from-[#ff7e5f]  to-[#feb47b] z-10 "></div>
-      <div className="h-[185rem] relative md:flex md:justify-around md:flex-row md:mt-[-42rem] mt-[-160rem] flex flex-col  space-y-10 md:space-y-0 md:space-x-4 md:mx-10 items-center md:items-stretch ">
+      <div className="h-[185rem] md:h-[40rem] relative md:flex md:justify-around md:flex-row md:mt-[-42rem] mt-[-160rem] flex flex-col  space-y-10 md:space-y-0 md:space-x-4 md:mx-10 items-center md:items-stretch ">
         <div className="text-black bg-white md:w-[17rem] w-[18rem] md:h-[35rem] rounded-xl overflow-hidden hover:scale-105 transition-transform duration-200 ease-in-out">
           <img alt="imagea" className="h-[11rem]" src={teslacopy} />
           <h1 className="font-logo md:text-[1.5rem] text-[1.2rem] mx-4  my-[1rem]">
