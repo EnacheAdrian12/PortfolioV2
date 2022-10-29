@@ -18,8 +18,8 @@ const About = () => {
         <div className="md:mt-[3.5rem] mt-[-28rem] mx-10  md:mx-10 md:w-[40rem] bg-gradient-to-r from-[#feb47b] via-[#feb47b]  to-[#ff7e5f] md:rotate-[3deg] rounded-3xl py-3 ">
           <p className="m-10 md:rotate-[357deg] font-bold text-[17px] font-logo">
             {" "}
-            I'm a Web Developer and student at Romano-American University. I am
-            a fast learner and have good problem-solving skills. I also
+            I'm a Web Developer and student at Romanian-American University. I
+            am a fast learner and have good problem-solving skills. I also
             appreciate acommunication skills such as clear communication both on
             paper and vocally, the ability to present reasoned debates to
             organise information and having a clear understanding of a client's

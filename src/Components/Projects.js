@@ -18,14 +18,14 @@ const Projects = () => {
           Projects
         </h1>
       </div>
-      <div className="md:h-[50rem] h-[160rem] md:rotate-[357deg] md:mx-[-30px]  md:mt-[-7rem]  bg-gradient-to-r from-[#ff7e5f]  to-[#feb47b] z-10 "></div>
-      <div className="h-[185rem] md:h-[40rem] relative md:flex md:justify-around md:flex-row md:mt-[-42rem] mt-[-160rem] flex flex-col  space-y-10 md:space-y-0 md:space-x-4 md:mx-10 items-center md:items-stretch ">
-        <div className="text-black bg-white md:w-[17rem] w-[18rem] md:h-[35rem] rounded-xl overflow-hidden hover:scale-105 transition-transform duration-200 ease-in-out">
+      <div className="laptop:h-[50rem] h-[160rem] laptop:rotate-[357deg] laptop:mx-[-30px]  laptop:mt-[-7rem]  bg-gradient-to-r from-[#ff7e5f]  to-[#feb47b] z-10 "></div>
+      <div className="h-[185rem] laptop:h-[40rem] relative laptop:flex laptop:justify-around laptop:flex-row laptop:mt-[-42rem] mt-[-160rem] flex flex-col  space-y-10 laptop:space-y-0 laptop:space-x-4 laptop:mx-10 items-center laptop:items-stretch ">
+        <div className="text-black bg-white calculator:w-[17rem] w-[18rem] laptop:h-[35rem]  md:h-[35rem] rounded-xl overflow-hidden hover:scale-105 transition-transform duration-200 ease-in-out">
           <img alt="imagea" className="h-[11rem]" src={teslacopy} />
-          <h1 className="font-logo md:text-[1.5rem] text-[1.2rem] mx-4  my-[1rem]">
+          <h1 className="font-logo calculator:text-[1.5rem] text-[1.2rem] mx-4  my-[1rem]">
             Tesla Clone
           </h1>
-          <p className=" mx-4 mb-[3rem] text-[0.83rem] md:text-[1rem]">
+          <p className=" mx-4 mb-[3rem] laptop:mb-[4rem] calculator:mb-[3rem] text-[0.83rem] laptop:text-[0.90rem] ">
             This project is a copy of the first page on the tesla website in the
             US. I used{" "}
             <u>
@@ -41,28 +41,28 @@ const Projects = () => {
           </p>
           <div className="flex justify-center mx-4">
             <Link
-              className="mr-3 font-logo text-white bg-slate-900 hover:bg-slate-700 p-2 px-4 rounded-3xl md:text-[17px] text-[15px] "
+              className="mr-3 font-logo text-white bg-slate-900 hover:bg-slate-700 p-2 px-4 rounded-3xl calculator:text-[17px] text-[14px] "
               to="/copytesla"
             >
-              Live Demo {">"}
+              Live Demo
             </Link>
             <a
-              className=" font-logo text-white  bg-slate-900 p-2 rounded-3xl md:text-[17px] text-[15px] px-4 md:px-2 hover:bg-slate-700"
+              className=" font-logo text-white  bg-slate-900 p-2 rounded-3xl calculator:text-[17px] text-[14px] px-4 calculator:px-2 hover:bg-slate-700"
               href="https://github.com/EnacheAdrian12/TeslaCopy"
               target="_blank"
               rel="noreferrer"
             >
-              GitHub {">"}
+              GitHub
             </a>
           </div>
         </div>
         {/* Tesla */}
-        <div className="text-black bg-white md:w-[17rem] w-[18rem] rounded-xl md:h-[35rem] overflow-hidden hover:scale-105 transition-transform duration-200 ease-in-out">
+        <div className="text-black bg-white calculator:w-[17rem] w-[18rem] laptop:h-[35rem]  md:h-[35rem] rounded-xl overflow-hidden hover:scale-105 transition-transform duration-200 ease-in-out">
           <img alt="imagea" className="h-[11rem]" src={todolist} />
-          <h1 className="font-logo md:text-[1.5rem] text-[1.2rem] mx-4  my-[1rem]">
+          <h1 className="font-logo calculator:text-[1.5rem] text-[1.2rem] mx-4  my-[1rem]">
             Todo App
           </h1>
-          <p className=" mx-4 mb-[6rem] text-[0.83rem] md:text-[1rem]">
+          <p className=" mx-4 mb-[3rem] laptop:mb-[6.7rem] calculator:mb-[4.3rem] text-[0.83rem] laptop:text-[0.90rem]">
             In this project, I built a Todo List. I wanted to recap{" "}
             <u>
               <b>CRUD principles</b>
@@ -81,28 +81,28 @@ const Projects = () => {
           </p>
           <div className="flex justify-center mx-4">
             <Link
-              className="mr-3 font-logo text-white bg-slate-900  p-2 px-4 rounded-3xl md:text-[17px] text-[15px] hover:bg-slate-700"
+              className="mr-3 font-logo text-white bg-slate-900 hover:bg-slate-700 p-2 px-4 rounded-3xl calculator:text-[17px] text-[14px]"
               to="/todolist"
             >
-              Live Demo {">"}
+              Live Demo 
             </Link>
             <a
-              className=" font-logo text-white  bg-slate-900 p-2 rounded-3xl md:text-[17px] text-[15px] px-4 md:px-2 hover:bg-slate-700"
+              className=" font-logo text-white  bg-slate-900 p-2 rounded-3xl calculator:text-[17px] text-[14px] px-4 calculator:px-2 hover:bg-slate-700"
               href="https://github.com/EnacheAdrian12/ToDoList"
               target="_blank"
               rel="noreferrer"
             >
-              GitHub {">"}
+              GitHub 
             </a>
           </div>
         </div>
         {/* TodoList */}
-        <div className="text-black bg-white md:w-[17rem] w-[18rem] rounded-xl md:h-[35rem] overflow-hidden hover:scale-105 transition-transform duration-200 ease-in-out ">
+        <div className="text-black bg-white calculator:w-[17rem] w-[18rem] laptop:h-[35rem]  md:h-[35rem] rounded-xl overflow-hidden hover:scale-105 transition-transform duration-200 ease-in-out ">
           <img alt="imagea" className="h-[11rem]" src={juice} />
-          <h1 className="font-logo text-[1.5rem] mx-4 my-[1rem]">
+          <h1 className="font-logo calculator:text-[1.5rem] text-[1.2rem] mx-4  my-[1rem]">
             Juice Factory
           </h1>
-          <p className="mx-4 mb-[3rem] text-[0.83rem] md:text-[1rem]">
+          <p className="mx-4 mb-[3rem] laptop:mb-[4rem] calculator:mb-[2.9rem] text-[0.83rem] laptop:text-[0.90rem]">
             I built this project to show some of my design skills. The website
             tells the story of a family that opened a chain of restaurants. The
             project was made while I was still learning{" "}
@@ -113,28 +113,28 @@ const Projects = () => {
           </p>
           <div className="flex justify-center mx-4">
             <Link
-              className="mr-3 font-logo text-white bg-slate-900 p-2 px-4  rounded-3xl md:text-[17px] text-[15px] hover:bg-slate-700"
+              className="mr-3 font-logo text-white bg-slate-900 hover:bg-slate-700 p-2 px-4 rounded-3xl calculator:text-[17px] text-[14px]"
               to="/fruitfactory"
             >
-              Live Demo {">"}
+              Live Demo 
             </Link>
             <a
-              className=" font-logo text-white  bg-slate-900  p-2 rounded-3xl md:text-[17px] text-[15px] px-4 md:px-2 hover:bg-slate-700"
+              className=" font-logo text-white  bg-slate-900 p-2 rounded-3xl calculator:text-[17px] text-[14px] px-4 calculator:px-2 hover:bg-slate-700"
               href="https://github.com/EnacheAdrian12/juicewebsite"
               target="_blank"
               rel="noreferrer"
             >
-              GitHub {">"}
+              GitHub 
             </a>
           </div>
         </div>
         {/* Juice */}
-        <div className="text-black bg-white md:w-[17rem] w-[18rem] rounded-xl md:h-[35rem] overflow-hidden hover:scale-105 transition-transform duration-200 ease-in-out">
+        <div className="text-black bg-white calculator:w-[17rem] w-[18rem] laptop:h-[35rem]  md:h-[35rem] rounded-xl overflow-hidden hover:scale-105 transition-transform duration-200 ease-in-out">
           <img alt="imagea" src={jokescenter} className="h-[11rem]" />
-          <h1 className="font-logo md:text-[1.5rem] text-[1.2rem] mx-4  my-[1rem]">
+          <h1 className="font-logo calculator:text-[1.5rem] text-[1.2rem] mx-4  my-[1rem]">
             Jokes Center
           </h1>
-          <p className=" mx-4 mb-[6rem] text-[0.83rem] md:text-[1rem]">
+          <p className=" mx-4 mb-[3rem] laptop:mb-[6.7rem] calculator:mb-[4.3rem] text-[0.83rem] laptop:text-[0.90rem]">
             In this project, I used a REST API ({" "}
             <u>
               <b>Jokes API</b>
@@ -153,28 +153,28 @@ const Projects = () => {
           </p>
           <div className="flex justify-center mx-4">
             <Link
-              className="mr-3 font-logo text-white bg-slate-900  p-2 px-4 rounded-3xl md:text-[17px] text-[15px] hover:bg-slate-700"
+              className="mr-3 font-logo text-white bg-slate-900 hover:bg-slate-700 p-2 px-4 rounded-3xl calculator:text-[17px] text-[14px]"
               to="/jokescenter"
             >
-              Live Demo {">"}
+              Live Demo 
             </Link>
             <a
-              className=" font-logo text-white  bg-slate-900  p-2 rounded-3xl md:text-[17px] text-[15px] px-4 md:px-2 hover:bg-slate-700"
+              className=" font-logo text-white  bg-slate-900 p-2 rounded-3xl calculator:text-[17px] text-[14px] px-4 calculator:px-2 hover:bg-slate-700"
               href="https://github.com/EnacheAdrian12/JokesCenter"
               target="_blank"
               rel="noreferrer"
             >
-              GitHub {">"}
+              GitHub 
             </a>
           </div>
         </div>
         {/* jokes*/}
-        <div className="text-black bg-white md:w-[17rem] w-[18rem] rounded-xl md:h-[35rem] overflow-hidden hover:scale-105 transition-transform duration-200 ease-in-out">
+        <div className="text-black bg-white calculator:w-[17rem] w-[18rem] laptop:h-[35rem]  md:h-[35rem] rounded-xl overflow-hidden hover:scale-105 transition-transform duration-200 ease-in-out">
           <img alt="imagea" src={button} className="h-[11rem] " />
-          <h1 className="font-logo md:text-[1.5rem] text-[1.2rem] mx-4  my-[1rem]">
+          <h1 className="font-logo calculator:text-[1.5rem] text-[1.2rem] mx-4  my-[1rem]">
             Hack 2003
           </h1>
-          <p className=" mx-4 mb-[1.5rem] text-[0.83rem] md:text-[1rem]">
+          <p className=" mx-4 mb-[3rem] laptop:mb-[2.5rem] calculator:mb-[0rem] text-[0.83rem] laptop:text-[0.90rem]">
             This project wants to bring a hack from 2003, which caused a lot of
             errors and controversies. Because once it was called, it deleted
             everything from the computer it was on. This was a .exe file, but I
@@ -183,23 +183,23 @@ const Projects = () => {
           </p>
           <div className="flex justify-center mx-4">
             <Link
-              className="mr-3 font-logo text-white bg-slate-900 p-2 px-4 rounded-3xl md:text-[17px] text-[15px] hover:bg-slate-700"
+              className="mr-3 font-logo text-white bg-slate-900 hover:bg-slate-700 p-2 px-4 rounded-3xl calculator:text-[17px] text-[14px]"
               to="/hack"
             >
-              Live Demo {">"}
+              Live Demo 
             </Link>
             <a
-              className="  font-logo text-white  bg-slate-900  p-2 rounded-3xl md:text-[17px] text-[15px] px-4 md:px-2 hover:bg-slate-700"
+              className=" font-logo text-white  bg-slate-900 p-2 rounded-3xl calculator:text-[17px] text-[14px] px-4 calculator:px-2 hover:bg-slate-700"
               href="https://github.com/EnacheAdrian12/ExHack"
               target="_blank"
               rel="noreferrer"
             >
-              GitHub {">"}
+              GitHub 
             </a>
           </div>
         </div>
         {/* Button */}
-        <div className="text-black bg-white md:w-[17rem] rounded-xl overflow-hidden invisible md:visible md:h-[35rem] ">
+        <div className="text-black bg-white calculator:w-[17rem] w-[18rem] laptop:h-[35rem] rounded-xl overflow-hidden invisible laptop:visible md:h-[35rem] cursor-default ">
           <img alt="imagea" className="h-[11rem] blur" src={spotify} />
           <h1 className="font-logo text-[1.5rem] mx-4 mt-[1rem]">
             Spotify Clone
@@ -217,10 +217,10 @@ const Projects = () => {
           </div>
           <div className="flex justify-center mx-4 blur">
             <button className="mr-3 font-logo text-white bg-slate-900  p-2 rounded-3xl text-[17px] ">
-              Live Demo {">"}
+              Live Demo 
             </button>
             <button className=" font-logo text-white  bg-slate-900 p-2 rounded-3xl text-[17px]">
-              GitHub {">"}
+              GitHub 
             </button>
           </div>
         </div>
